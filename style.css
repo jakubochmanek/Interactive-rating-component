@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+.container{
+    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    height: 400px;
+    width: 330px;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display: none; */
+}
+
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(213, 16%, 22%);
+}
+
+h1{
+    margin-top:0;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 15px;
+    color: var(--Light-Grey);
+    font-weight: 400;
+    margin: 0;
+}
+
+.rating-numbers{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: hsl(213, 16%, 22%);
+    color: var(--Light-Grey);
+    font-weight: 700;
+    font-size: large;
+}
+
+.btn:hover{
+    background-color: var(--Orange);
+    color: white;
+}
+
+.btn:focus{
+    background-color: var(--Light-Grey);
+    color: white;
+}
+
+
+.submit{
+    background-color: var(--Orange);
+    color: white;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.submit:hover{
+    background-color: white;
+    color: var(--Orange);
+}
+
+
+/* Second Container */
+
+#thanks-container{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.info{
+    background-color: var(--Dark-Blue);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.info p{
+    color: var(--Orange);
+}
+
+.bottom-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
